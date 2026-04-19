@@ -10,8 +10,10 @@
         <module name="CucumberBasics" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CucumberBasics" target="10" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CucumberBasics" options="--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+    </option>
   </component>
 </project>
